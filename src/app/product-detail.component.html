@@ -1,18 +1,18 @@
 <h1>Product Details Page</h1>
 
+<div class="topbar">
+<p style="float:left;">product : {{product.name}}</p>
+<p >price : {{ product.price}}</p>
+</div>
 
-product : {{product.name}}
-price : {{ product.price}}
-
-
-<ul class="nav navbar-nav">
-    <li><a [routerLink]="['overview']" routerLinkActive="active">OverView </a></li>
-    <li><a [routerLink]="['spec']" routerLinkActive="active">Specification </a></li>
+<ul class="nav navbar-nav ">
+    <li ><a class="Button btn btn-primary" [routerLink]="['overview']" routerLinkActive="active">OverView </a></li>
+    <li ><a class="Button btn btn-info" [routerLink]="['spec']" routerLinkActive="active">Specification </a></li>
 </ul>
 
 <router-outlet></router-outlet>
 
 
 <p>
-    <a class='btn btn-default' (click)="onBack()">Back to Product List </a>
+    <a class='Button btn btn-default' (click)="onBack()">Back to Product List </a>
 </p>
